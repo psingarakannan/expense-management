@@ -1,0 +1,46 @@
+<div align="center">
+  <div class="table-div"  >
+  <div class="table-div-head1">
+      <div class="table-div-body text-left">Add Expenses</div>
+      <div  class="table-div-body text-right">
+          <div class="table-div-opr"><button class="btn btn-info btn-lg glyphicon" (click)="submitExpenses()" type="button">&nbsp;Submit</button></div>
+          <div class="table-div-opr"><button type="button" (click)="addExpense()" class="btn btn-info btn-lg glyphicon glyphicon-plus">&nbsp;New</button></div>
+          <div class="table-div-opr"><button class="btn btn-info btn-lg glyphicon glyphicon-minus" (click)="deleteExpense()" type="button">&nbsp;Delete</button></div>
+      </div>  
+  </div>    
+  <div class="table-div-head" *ngFor="let expense of expenses"  align="center"> 
+      <table align="center">
+          <tr>
+              <td>
+                  <label  class="form-control" >{{expense.id}}.</label>
+              </td>
+              <td>
+                  <input readonly type="number" class="form-control" placeholder="Amount Spent" [(ngModel)]="expense.amount"/>
+              </td>
+              <td>
+                  <input readonly type="date" class="form-control" placeholder="Spent Date"  [(ngModel)]="expense.date"/>
+              </td>
+              <td>
+                  <select disabled class="form-control custom-select-box" >
+                      <option *ngFor="let exp of expenseList" [value]="exp.id" > {{exp.value}} </option>
+                  </select>
+              </td>
+              <td>
+                  <select disabled class="form-control custom-select-box" >
+                      <option *ngFor="let account of accountList" [value]="account.id" > {{account.value}} </option>
+                  </select>
+              </td>
+              <td>
+                  <input readonly type="text" class="form-control" placeholder="Description"  [(ngModel)]="expense.desc"/>
+              </td>
+              <td *ngIf="expense.editEnabled" >
+                  <div class="table-div-opr"><button class="btn btn-info btn-lg " (click)="editExpense(expense)" type="button">&nbsp;Edit</button></div>
+              </td>
+              <td *ngIf="expense.submitEnabled">
+                <div class="table-div-opr"><button class="btn btn-info btn-lg " (click)="submitExpense(expense)" type="button">&nbsp;Submit</button></div>
+            </td>
+          </tr>
+      </table>
+  </div>
+  </div>
+</div>

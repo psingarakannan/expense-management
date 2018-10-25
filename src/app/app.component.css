@@ -1,0 +1,38 @@
+
+.module-box{
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 150%;
+  color: #eee;
+  background-color:teal;
+  opacity: 0.65;
+  font-weight: bolder;
+  margin:0.5em;
+  width:9em;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  
+
+}  
+.parent-module-box{
+  background-color:rgb(11, 151, 83);
+  opacity: 0.3;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+}
+.parent-module-box:hover{
+  opacity: 1;
+  
+}
+
+.module-box:hover{
+  opacity: 1;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+  transform: translateY(-5px)translateX(5px);
+  transition: .3s;
+}
+padding: 30px;
+height: 8em;

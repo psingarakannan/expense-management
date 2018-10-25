@@ -1,0 +1,52 @@
+.form-outer-div{
+    color: rgb(13, 130, 184);
+    opacity: 0.65;
+    background-color:whitesmoke;
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    font-size: 150%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  input,select, button{
+    color: rgb(13, 130, 184);
+  
+    margin-top: 10px;
+    height: 3em;
+  }
+  button{
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+  }
+  button:hover{
+    box-shadow: 0 22px 43px rgba(0,0,0,.2);
+    transform: translateY(-2px);
+    transition: .3s;
+  }
+  select:hover{
+    box-shadow: 0 10px 22px rgba(0,0,0,.2);
+    
+  }
+  input:hover{
+    box-shadow: 0 10px 22px rgba(0,0,0,.2);
+    
+  }
+  .form-margin{
+    margin-top: 20px;
+  }
+  .form-outer-div:hover{
+    opacity: 1;
+    box-shadow: 0 22px 43px rgba(0,0,0,.2);
+  
+  }
+  footer{
+      margin-top: 2em;
+      margin-bottom:2em; 
+  }
+  

@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+  }
+  h1 {
+    color:gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    width: 100%;
+    
+    padding-top: 1em;
+    vertical-align: middle;
+    margin: 0%;
+    font-weight: bolder;
+
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    background-image: url("kalai.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+  }
+  body, input[text], button {
+    color: #888;
+    font-family: Cambria, Georgia;
+  }
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }

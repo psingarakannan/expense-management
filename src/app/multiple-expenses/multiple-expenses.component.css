@@ -1,0 +1,83 @@
+table{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table-div-head{
+    width: 100%;
+    display: inline-block;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.table-div-head1{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.table-div-body{
+    color: rgb(13, 130, 184);
+
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.text-left{
+    font-size: 20px;
+    width: 20%;
+    text-align: left !important;
+}
+.text-right{
+    width: 75%;
+    text-align: right !important;
+}
+button{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;    
+    color: rgb(255, 255, 255);
+    margin-right:10px; 
+    margin-bottom:10px; 
+    border-radius: 4px;
+    background-color:whitesmoke;
+    box-shadow: 0 22px 43px rgba(.2,.2,.2,.2);
+    border-color: whitesmoke;
+    color: rgb(131, 128, 128);
+    font-size: 15px;
+    
+}
+button:hover{
+    transform: translateY(-2px);
+    background-color:whitesmoke;
+    border-color: whitesmoke;
+    color: rgb(131, 128, 128);
+    font-weight: bold;
+}
+
+.table-div-opr{
+    display: inline;
+    text-align: left;
+}
+label{
+    border: 0;
+    background-color:whitesmoke;
+    box-shadow: none;
+}
+.table-div{
+background-color:whitesmoke;
+width: 60%;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+box-shadow: 0 22px 43px rgba(0,0,0,.2);
+border-radius: 6px;
+color: rgb(13, 130, 184);
+}
+td{
+    padding: 5px;
+    color: rgb(13, 130, 184);
+
+}
+/* 
+//Add  + icon to add a row 
+//Select and delete a row
+//submit together */

@@ -1,0 +1,22 @@
+<div class="form-outer-div">
+    <div class="form-div">
+        <div class="form-heading form-margin">Expenses</div>
+        <div class="form-content-div form-margin">
+            <input type="number" class="form-control" placeholder="Amount Spent"/>
+            <input type="date" class="form-control" placeholder="Spent Date"/>
+            <select class="form-control custom-select-box" >
+                <option *ngFor="let expense of expenseList" [value]="expense.id" > {{expense.value}} </option>
+            </select>
+            <select class="form-control custom-select-box" >
+                <option *ngFor="let account of accountList" [value]="account.id" > {{account.value}} </option>
+            </select>
+
+            <input type="text" class="form-control" placeholder="Description"/>
+
+        </div>
+        <div class="form-heading form-margin"><footer>
+            <button class="btn-primary form-control">Submit</button>
+        </footer></div>
+
+    </div>
+</div>
