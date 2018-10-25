@@ -1,2 +1,2 @@
 # expense-management
-To manage the household expenses
+To manage the household expenses and savings
